@@ -123,22 +123,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-//    @SuppressLint("ResourceType")
-//    public void ClickonDetails(View view) {
-//
-//        FrameLayout fragmentLayout = new FrameLayout(this);
-//        fragmentLayout.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
-//        fragmentLayout.setId(2);
-//        setContentView(fragmentLayout);
-//        getSupportFragmentManager()
-//                .beginTransaction().addToBackStack(null)
-//                .add(2, new DetailFragment(2)).commit();
-//    }
-
-
     public void ClickOnBack(View view) {
         Intent i = new Intent(this, MainActivity.class);
-// set the new task and clear flags
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(i);
     }

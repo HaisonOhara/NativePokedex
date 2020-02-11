@@ -51,14 +51,12 @@ public class ListaPokemonAdapter extends RecyclerView.Adapter<ListaPokemonAdapte
                 .crossFade()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(holder.fotoImageView);
-
+//Funçao que direciona o click na imagem do Pokemon
         holder.fotoImageView.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ResourceType")
             @Override
             public void onClick(View view) {
 //                Toast.makeText(context, "You clicked on " + dataset.get(position).getNumber(), Toast.LENGTH_LONG).show();
-
-
 
                 FrameLayout fragmentLayout = new FrameLayout(context);
                 fragmentLayout.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
